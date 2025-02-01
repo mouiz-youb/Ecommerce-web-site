@@ -1,0 +1,30 @@
+.App {
+  background-color: wheat;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    "nav" "content" "content" "content" "content"
+    "content" "content" "content" "content" "content";
+}
+.nav-bar {
+  grid-area: nav;
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo logo . . . . . . icon icon";
+}
+.logo {
+  grid-area: logo;
+}
+.icon {
+  grid-area: icon;
+}
+.home {
+  grid-area: content;
+  border: 1px solid;
+  overflow-y: scroll;
+}
