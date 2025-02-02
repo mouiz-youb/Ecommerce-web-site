@@ -10,3 +10,7 @@ createRoot(document.getElementById("root")).render(
     </StrictMode>
   </BrowserRouter>
 );
+// ⁡⁣⁢⁢tailwind merge ⁡
+// ⁡⁢⁣⁢clsx⁡
+// ⁡⁢⁢⁢tailwind cn ⁡
+// ⁡⁣⁢⁣𝗰𝗹𝗮𝘀𝘀 𝘃𝗮𝗿𝗶𝗮𝗻𝗰𝗲 𝗮𝘂𝘁𝗵𝗼𝗿𝗶𝘁𝗵𝗶𝗲⁡
