@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from "react";
-
+import "../App.css";
+import Hero from "../Components/Hero";
+import Section2 from "../Components/Section2";
+import Section3 from "../Components/Section3";
+import Footer from "../Components/Footer";
+import Section4 from "../Components/Section4";
+import Section5 from "../Components/Section5";
+import Section6 from "../Components/Section6";
+import Section7 from "../Components/Section7";
+import Section8 from "../Components/Section8";
+import Section9 from "../Components/Section9";
 function Home() {
   const [resized, setResized] = useState(window.innerWidth);
   useEffect(() => {
@@ -13,12 +23,16 @@ function Home() {
   }, []);
   return (
     <div className="home">
-      <h1>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ex
-        inventore alias repellendus quis veritatis, magnam rem nobis itaque
-        suscipit debitis maiores deleniti facere? Architecto harum maiores ea
-        ipsum totam!
-      </h1>
+      <Hero />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
+      <Section8 />
+      <Section9 />
+      <Footer />
     </div>
   );
 }
