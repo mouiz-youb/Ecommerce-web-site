@@ -13,17 +13,17 @@
 .nav-bar {
   grid-area: nav;
   border: 1px solid;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 1fr;
-  grid-template-areas: "logo logo . . . . . . icon icon";
+  grid-template-areas: "logo logo . . . . . . icon icon"; */
 }
-.logo {
+/* .logo {
   grid-area: logo;
 }
 .icon {
   grid-area: icon;
-}
+} */
 .home {
   grid-area: content;
   /* border: 1px solid;
@@ -38,4 +38,40 @@
   display: flex;
   justify-content: end;
   align-items: end;
+}
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+.section2 {
+  display: grid;
+  overflow-x: hidden;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: " left left left left right right right right right right";
+}
+/* w-[200px] absolute left-0 h-[200px] rounded-[12px] */
+/* left: 30%; */
+/* top: 30%; */
+/* bottom: 100%; */
+/* w-[150px] h-[150px] absolute bottom-[80%] left-[30%]  */
+.carooucel {
+  grid-area: right;
+  /* border: 1px solid; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* grid-area: 20px; */
+}
+.desc {
+  grid-area: left;
+  border: 1px solid;
 }

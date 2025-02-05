@@ -11,7 +11,7 @@ function NavbarA() {
         <Link to="/">Home</Link>
         <Link to="/">Home</Link>
       </div>
-      <div className="col-start-7 col-end-9 grid grid-cols-2 grid-rows-1 ">
+      <div className="col-start-8 col-end-10 grid grid-cols-2 grid-rows-1 ">
         <button>Sign up</button>
         <button>Log in </button>
       </div>

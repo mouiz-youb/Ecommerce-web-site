@@ -6,17 +6,17 @@ function NavbarM() {
   const click = useClick((state) => state.click);
   const setClick = useClick((state) => state.setClick);
   return (
-    <div className="nav-bar md:grid md:grid-cols-10 md:grid-rows-1  ">
-      <div className="logo flex justify-center items-center text-2xl md:flex md:justify-center md:items-center md:col-start-1 md:col-end-2   ">
+    <div className="nav-bar flex justify-between items-center flex-row pl-5 pr-5 py-4 md:grid md:grid-cols-10 md:grid-rows-1  ">
+      <div className=" flex justify-center items-center text-2xl md:flex md:justify-center md:items-center md:col-start-1 md:col-end-2   ">
         logo
       </div>
-      <div className="icon flex justify-center items-center text-2xl ">
+      <div className=" flex justify-center items-center text-2xl ">
         <TfiAlignJustify
           className="z-10"
           onClick={() => setClick((prev) => !prev)}
         />
         {click ? (
-          <div className="  w-screen h-screen absolute top-0 left-0 bg-blue-400 grid grid-cols-1 grid-rows-10 ">
+          <div className="   w-screen  h-96 absolute top-0 left-0 bg-blue-400 grid grid-cols-1 grid-rows-10 ">
             <div className=" row-start-1 row-end-8   flex justify-center items-center flex-col gap-6">
               <Link to="/">Home</Link>
               <Link to="/">Home</Link>
