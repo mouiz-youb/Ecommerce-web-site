@@ -14,7 +14,7 @@ function Caroucel() {
   const images = [
     imageSlider1,
     imageSlider2,
-    imageSlider3,
+    imageSlider1,
     imageSlider1,
     imageSlider2,
   ];
@@ -93,26 +93,23 @@ function Caroucel() {
     },
   };
   return (
-    <div className=" carooucel  p-5 relative flex justify-center items-center flex-col gap-5  ">
-      {/* <img
-        src={imageSlider1}
-        alt=""
-        className=" w-[150px] h-[150px] absolute bottom-[80%] left-[90%] "
-      /> */}
-      {images.map((image, index) => (
-        <motion.img
-          key={index}
-          src={image}
-          className={`rounded-[12px] w-[250px] h-[200px] `}
-          initial="center"
-          animate={positions[positionIndex[index]]}
-          variants={imagevariants}
-          transition={{ duration: 0.5 }}
-          style={{ position: "absolute" }}
-        />
-      ))}
+    <div className=" bg-amber-500 text-white   relative flex justify-center items-center flex-col gap-5 col-start-1 col-end-1 row-start-5 row-end-10 md:col-start-5 md:col-end-10 md:row-start-1 md:row-end-1 w-full h-full">
+      <div className="flex justify-center items-center gap-5 flex-col  ">
+        {images.map((image, index) => (
+          <motion.img
+            key={index}
+            src={image}
+            className={`rounded-[12px]  `}
+            initial="center"
+            animate={positions[positionIndex[index]]}
+            variants={imagevariants}
+            transition={{ duration: 0.5 }}
+            style={{ position: "absolute", width: "40%" }}
+          />
+        ))}
+      </div>
       <button
-        className="block text-red-900 z-[100] absolute top-[130px] "
+        className="block text-red-900 z-[100] absolute bottom-[10%] lg:bottom-[0]  "
         onClick={handeleNext}
       >
         next
