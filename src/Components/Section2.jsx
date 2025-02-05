@@ -5,7 +5,7 @@ import Section2Desc from "./Section2Desc.jsx";
 import "../index.css";
 function Section2() {
   return (
-    <div className=" bg-blue-500 grid grid-cols-1 grid-rows-10   md:grid md:grid-cols-10 md:grid-rows-1 md:bg-red-500 ">
+    <div className="  grid grid-cols-1 grid-rows-10   md:grid md:grid-cols-10 md:grid-rows-1">
       <Section2Desc />
       <Caroucel />
     </div>

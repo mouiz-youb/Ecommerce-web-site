@@ -22,27 +22,27 @@ function Caroucel() {
   const imagevariants = {
     center: {
       x: "0",
-      scale: 1,
+      scale: 0.8,
       zIndex: 5,
     },
     left1: {
       x: "-50%",
-      scale: 0.7,
+      scale: 0.5,
       zIndex: 2,
     },
     left: {
       zIndex: 1,
-      scale: 0.5,
+      scale: 0.3,
       x: "-90%",
     },
     right: {
       zIndex: 1,
-      scale: 0.5,
+      scale: 0.3,
       x: "90%",
     },
     right1: {
       zIndex: 2,
-      scale: 0.7,
+      scale: 0.5,
       x: "50%",
     },
   };
@@ -93,23 +93,23 @@ function Caroucel() {
     },
   };
   return (
-    <div className=" bg-amber-500 text-white   relative flex justify-center items-center flex-col gap-5 col-start-1 col-end-1 row-start-5 row-end-10 md:col-start-5 md:col-end-10 md:row-start-1 md:row-end-1 w-full h-full">
+    <div className="  text-white   relative flex justify-center items-center flex-col gap-5 col-start-1 col-end-1 row-start-4 row-end-10 md:col-start-5 md:col-end-10 md:row-start-1 md:row-end-1 ">
       <div className="flex justify-center items-center gap-5 flex-col  ">
         {images.map((image, index) => (
           <motion.img
             key={index}
             src={image}
-            className={`rounded-[12px]  `}
+            className={` absolute rounded-[12px] w-[40%] md:w-[20%] lg:w-[40%] `}
             initial="center"
             animate={positions[positionIndex[index]]}
             variants={imagevariants}
             transition={{ duration: 0.5 }}
-            style={{ position: "absolute", width: "40%" }}
+            // style={{ position: "absolute" }}
           />
         ))}
       </div>
       <button
-        className="block text-red-900 z-[100] absolute bottom-[10%] lg:bottom-[0]  "
+        className="flex  justify-center items-center text-2xl bg-black text-white rounded-[15px]   w-[80px] h-[30px] z-[100] md:left-[10%] absolute bottom-[10%] lg:bottom-[10%]  "
         onClick={handeleNext}
       >
         next
